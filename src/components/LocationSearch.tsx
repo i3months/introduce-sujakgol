@@ -106,10 +106,6 @@ export default function KakaoMapSection({
       ? `${centerLatLng.lat.toFixed(6)}, ${centerLatLng.lng.toFixed(6)}`
       : "");
 
-  const handleCopy = async () => {
-    if (!displayAddress) return;
-    await navigator.clipboard.writeText(displayAddress);
-  };
   return (
     <section className="px-5 py-6">
       <h2 className="text-[17px] font-semibold tracking-tight mb-3">
