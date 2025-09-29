@@ -64,8 +64,9 @@ export default function App() {
 
         <LocationSection
           name="수작골 별장"
-          lat={37.501305}
-          lng={127.039624}
+          address="충남 공주시 이인면 수작골길 43-3"
+          lat={36.3710243582134}
+          lng={127.10712108902}
           height={240}
         />
 
@@ -98,7 +99,7 @@ export default function App() {
               <div className="flex-1 leading-tight">
                 <div className="text-[12px] text-zinc-500">이메일</div>
                 <a
-                  href="mailto:contact@sujakgol.com"
+                  href="mailto:woong258@hanmail.net"
                   className="text-sm font-medium text-zinc-900 break-all"
                 >
                   woong258@hanmail.net
