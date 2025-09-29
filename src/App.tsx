@@ -27,7 +27,7 @@ export default function App() {
               수작골 별장으로 초대합니다.
             </h1>
             <p className="mt-1 text-[13px] text-white/90">
-              제작비 3억 + 부지비 7억 + 인테리어 2억 = 총 12억
+              소중한 분들을 위한 특별한 초대의 공간
             </p>
           </div>
         </section>
