@@ -91,15 +91,6 @@ export default function KakaoMapSection({
       } else {
         mapRef.current.setCenter(center);
       }
-
-      const marker = new kakao.maps.Marker({
-        position: center,
-        map: mapRef.current,
-      });
-      //   const iwContent = `<div style="padding:6px 10px;border:1px solid #111;background:#fff;font-size:12px;border-radius:6px;">${name}</div>`;
-      //   const infowindow = new kakao.maps.InfoWindow({ content: iwContent });
-      //   infowindow.open(mapRef.current, marker);
-      //   mapRef.current.panBy(0, -60);
     })().catch((e) => {
       console.error(e);
     });
