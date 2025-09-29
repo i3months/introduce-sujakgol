@@ -33,7 +33,10 @@ export default function KakaoMapSection({
   height = 240,
 }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const mapRef = useRef<any>(null); // kakao.maps.Map 인스턴스 저장
+  const mapRef = useRef<any>(null);
+  const markerRef = useRef<any>(null);
+  const infoRef = useRef<any>(null);
+
   const [centerLatLng, setCenterLatLng] = useState<{
     lat: number;
     lng: number;
@@ -56,7 +59,6 @@ export default function KakaoMapSection({
 
       const kakao = (window as any).kakao;
 
-      // 1) 중심 좌표 결정: lat/lng 우선, 없으면 주소 지오코딩
       const ensureCenter = async () => {
         if (typeof lat === "number" && typeof lng === "number") {
           return new kakao.maps.LatLng(lat, lng);
@@ -70,7 +72,6 @@ export default function KakaoMapSection({
               else reject(new Error("지오코딩 실패"));
             });
           });
-          // result.x(lng), result.y(lat)
           setCenterLatLng({ lat: Number(result.y), lng: Number(result.x) });
           return new kakao.maps.LatLng(result.y, result.x);
         }
@@ -82,7 +83,7 @@ export default function KakaoMapSection({
       const center = await ensureCenter();
 
       if (!containerRef.current) return;
-      // StrictMode로 인한 중복 초기화 방지
+
       if (!mapRef.current) {
         mapRef.current = new kakao.maps.Map(containerRef.current, {
           center,
@@ -91,6 +92,34 @@ export default function KakaoMapSection({
       } else {
         mapRef.current.setCenter(center);
       }
+
+      if (!markerRef.current) {
+        markerRef.current = new kakao.maps.Marker({
+          position: center,
+          map: mapRef.current,
+          title: name || "위치",
+        });
+      } else {
+        markerRef.current.setPosition(center);
+        if (!markerRef.current.getMap()) {
+          markerRef.current.setMap(mapRef.current);
+        }
+      }
+
+      if (name) {
+        // const content = `<div style="padding:6px 8px;font-size:12px;white-space:nowrap;border-radius:8px;background:#fff;border:1px solid #e5e7eb;box-shadow:0 1px 4px rgba(0,0,0,0.08);color:#111827;">${name}</div>`;
+        // if (!infoRef.current) {
+        //   infoRef.current = new kakao.maps.InfoWindow({ content });
+        // } else {
+        //   infoRef.current.setContent(content);
+        // }
+        infoRef.current.open(mapRef.current, markerRef.current);
+      }
+
+      kakao.maps.event.addListener(mapRef.current, "dragend", () => {
+        const c = mapRef.current.getCenter();
+        setCenterLatLng({ lat: c.getLat(), lng: c.getLng() });
+      });
     })().catch((e) => {
       console.error(e);
     });
