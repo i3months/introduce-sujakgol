@@ -1,4 +1,5 @@
-// src/App.tsx
+import { Phone, Mail } from "lucide-react";
+
 import hero from "./assets/sujakgol.jpeg";
 import LocationSection from "./components/LocationSearch";
 
@@ -43,8 +44,8 @@ export default function App() {
         <section className="px-5 py-6">
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-2xl border border-zinc-200 p-4">
-              <p className="text-[12px] text-zinc-500 mb-1">VIEW</p>
-              <p className="text-sm font-medium">정원 & 숲 전망</p>
+              <p className="text-[12px] text-zinc-500 mb-1">FRUITS</p>
+              <p className="text-sm font-medium">블루베리 / 딸기 키움</p>
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">FOOD</p>
@@ -56,7 +57,7 @@ export default function App() {
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">ANIMAL</p>
-              <p className="text-sm font-medium">강아지 똘이 있음</p>
+              <p className="text-sm font-medium">강아지 똘이 놀러옴</p>
             </div>
           </div>
         </section>
@@ -69,28 +70,46 @@ export default function App() {
         />
 
         <section className="px-5 pt-6 pb-[calc(24px+env(safe-area-inset-bottom))]">
-          <SectionHeader>문의 / 예약</SectionHeader>
+          <SectionHeader>문의</SectionHeader>
           <p className="text-[13px] text-zinc-600 mb-4">
-            예약 및 이용 문의는 아래 연락처로 부탁드립니다.
+            이용 문의는 아래 연락처로 부탁드립니다.
           </p>
-          <div className="space-y-2">
-            <a
-              href="tel:01012345678"
-              className="block w-full rounded-xl bg-emerald-600 py-3 text-center text-sm font-semibold text-white"
-            >
-              전화 문의하기
-            </a>
-            <a
-              href="mailto:contact@sujakgol.com"
-              className="block w-full rounded-xl bg-zinc-900 py-3 text-center text-sm font-semibold text-white"
-            >
-              이메일 보내기
-            </a>
+
+          <div className="space-y-3">
+            <div className="flex items-center gap-3 rounded-2xl border border-zinc-200 p-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+                <Phone size={18} />
+              </div>
+              <div className="flex-1 leading-tight">
+                <div className="text-[12px] text-zinc-500">전화</div>
+                <a
+                  href="tel:01012345678"
+                  className="text-sm font-medium text-zinc-900"
+                >
+                  010-3825-0022
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-2xl border border-zinc-200 p-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-100 text-zinc-700">
+                <Mail size={18} />
+              </div>
+              <div className="flex-1 leading-tight">
+                <div className="text-[12px] text-zinc-500">이메일</div>
+                <a
+                  href="mailto:contact@sujakgol.com"
+                  className="text-sm font-medium text-zinc-900 break-all"
+                >
+                  woong258@hanmail.net
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
         <footer className="px-5 pb-6 text-center text-[12px] text-zinc-400">
-          © 2025 Sujakgol. All rights reserved.
+          WELCOME TO SUJAKGOL
         </footer>
       </div>
     </div>
