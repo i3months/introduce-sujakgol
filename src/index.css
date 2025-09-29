@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* 1) 폰트 파일 선언은 그대로 */
 @font-face {
   font-family: "SUITE";
   src: url("/fonts/SUITE/SUITE-Light.woff2") format("woff2");
