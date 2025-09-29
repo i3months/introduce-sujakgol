@@ -24,10 +24,10 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
           <div className="absolute bottom-5 left-0 right-0 px-5">
             <h1 className="text-3xl font-bold text-white">
-              수작골 별장으로 초대합니다.
+              수작골 쉼터로 초대합니다.
             </h1>
             <p className="mt-1 text-[13px] text-white/90">
-              소중한 분들을 위한 특별한 초대의 공간
+              10월 7일, 소중한 분들을 초대합니다.
             </p>
           </div>
         </section>
@@ -44,8 +44,8 @@ export default function App() {
         <section className="px-5 py-6">
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-2xl border border-zinc-200 p-4">
-              <p className="text-[12px] text-zinc-500 mb-1">FRUITS</p>
-              <p className="text-sm font-medium">블루베리 / 딸기 키움</p>
+              <p className="text-[12px] text-zinc-500 mb-1">SERVICE</p>
+              <p className="text-sm font-medium">향기로운 차와 음악</p>
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">FOOD</p>
