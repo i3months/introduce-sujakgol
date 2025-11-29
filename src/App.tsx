@@ -1,6 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 
-import hero from "./assets/sujakgol1.jpeg";
+import hero from "/sujakgol1.jpeg";
 import LocationSection from "./components/LocationSearch";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
@@ -27,7 +27,7 @@ export default function App() {
               수작골 쉼터로 초대합니다.
             </h1>
             <p className="mt-1 text-[13px] text-white/90">
-              10월 7일, 소중한 분들을 초대합니다.
+              12월 20일 13시, 소중한 분들을 초대합니다.
             </p>
           </div>
         </section>
@@ -45,19 +45,19 @@ export default function App() {
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">SERVICE</p>
-              <p className="text-sm font-medium">향기로운 차와 음악</p>
+              <p className="text-sm font-medium">향기로운 차</p>
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">FOOD</p>
-              <p className="text-sm font-medium">야외 바비큐 공간</p>
+              <p className="text-sm font-medium">바베큐</p>
+            </div>
+            <div className="rounded-2xl border border-zinc-200 p-4">
+              <p className="text-[12px] text-zinc-500 mb-1">SNACK</p>
+              <p className="text-sm font-medium">겨울 간식</p>
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">PARKING</p>
               <p className="text-sm font-medium">주차 2대까지 가능</p>
-            </div>
-            <div className="rounded-2xl border border-zinc-200 p-4">
-              <p className="text-[12px] text-zinc-500 mb-1">ANIMAL</p>
-              <p className="text-sm font-medium">강아지 똘이 놀러옴</p>
             </div>
           </div>
         </section>
