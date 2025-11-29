@@ -88,6 +88,7 @@ export default function KakaoMapSection({
         mapRef.current = new kakao.maps.Map(containerRef.current, {
           center,
           level: 3,
+          mapTypeId: kakao.maps.MapTypeId.HYBRID,
         });
       } else {
         mapRef.current.setCenter(center);
