@@ -35,7 +35,7 @@ export default function App() {
         <section className="px-5 pt-7 pb-6">
           <SectionHeader>소개</SectionHeader>
           <p className="text-[13px] leading-6 text-zinc-600">
-            충청남도 공주시에 위치한 작은집입니다. <br />
+            충청남도 공주시 이인면에 위치한 작은집입니다. <br />
             도심에서 벗어나 자연 속에서 편안한 시간을 같이 보내고자 합니다.
           </p>
         </section>
