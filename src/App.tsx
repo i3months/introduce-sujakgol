@@ -24,10 +24,10 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
           <div className="absolute bottom-5 left-0 right-0 px-5">
             <h1 className="text-3xl font-bold text-white">
-              소중한 여러분을 수작골 작은집으로 초대합니다.
+              소중한 분을 수작골 작은집으로 초대합니다.
             </h1>
             <p className="mt-1 text-[13px] text-white/90">
-              12월 20일 13시, 소중한 분들을 수작골 작은집으로 초대합니다.
+              12월 20일 토요일 13시
             </p>
           </div>
         </section>
