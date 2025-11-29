@@ -1,6 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 
-import hero from "./assets/sujakgol.jpeg";
+import hero from "./assets/sujakgol1.jpeg";
 import LocationSection from "./components/LocationSearch";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
