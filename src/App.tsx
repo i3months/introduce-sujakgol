@@ -24,7 +24,7 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
           <div className="absolute bottom-5 left-0 right-0 px-5">
             <h1 className="text-3xl font-bold text-white">
-              수작골 쉼터로 초대합니다.
+              수작골 작은 집으로 초대합니다.
             </h1>
             <p className="mt-1 text-[13px] text-white/90">
               12월 20일 13시, 소중한 분들을 초대합니다.
@@ -35,7 +35,7 @@ export default function App() {
         <section className="px-5 pt-7 pb-6">
           <SectionHeader>소개</SectionHeader>
           <p className="text-[13px] leading-6 text-zinc-600">
-            충청남도 공주시에 위치한 별장입니다. <br />
+            충청남도 공주시에 위치한 작은 집입니다. <br />
             도심에서 벗어나 자연 속에서 편안한 휴식을 즐기실 수 있습니다.
             <br /> 가족, 친구들과 함께 특별한 추억을 만들어보세요.
           </p>
@@ -57,7 +57,7 @@ export default function App() {
             </div>
             <div className="rounded-2xl border border-zinc-200 p-4">
               <p className="text-[12px] text-zinc-500 mb-1">PARKING</p>
-              <p className="text-sm font-medium">주차 2대까지 가능</p>
+              <p className="text-sm font-medium">주차 가능</p>
             </div>
           </div>
         </section>
