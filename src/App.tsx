@@ -72,7 +72,7 @@ export default function App() {
         <section className="px-5 pt-6 pb-[calc(24px+env(safe-area-inset-bottom))]">
           <SectionHeader>문의</SectionHeader>
           <p className="text-[13px] text-zinc-600 mb-4">
-            이용 문의는 아래 연락처로 부탁드립니다.
+            궁금하신 사항은 아래 연락처로 문의해주세요.
           </p>
 
           <div className="space-y-3">
